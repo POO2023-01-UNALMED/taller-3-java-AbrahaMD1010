@@ -5,6 +5,7 @@ public class TV {
     private boolean estado;
     private int volumen=1;
     private Control control;
+    private static int numTV;
 
     public TV(Marca marca, boolean estado) {
         this.marca=marca;
@@ -45,6 +46,21 @@ public class TV {
     }
     public int getCanal() {
         return canal;
+    }
+
+    public static int getNumTV() {
+        return numTV;
+    }
+
+    //metodo turnOn turnOff
+    public void turnOn() {
+        this.estado=true;
+    }
+    public void turnOff() {
+        this.estado=false;
+    }
+    public boolean getEstado() {
+        return estado;
     }
 }
 

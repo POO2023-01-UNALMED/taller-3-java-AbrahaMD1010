@@ -7,6 +7,7 @@ public class TV {
     private Control control;
     private static int numTV;
 
+    //Constructor
     public TV(Marca marca, boolean estado) {
         this.marca=marca;
         this.estado=estado;
@@ -48,6 +49,9 @@ public class TV {
         return canal;
     }
 
+    public static void setNumTV(TV numTV){
+        TV.numTV=numTV;
+    }
     public static int getNumTV() {
         return numTV;
     }

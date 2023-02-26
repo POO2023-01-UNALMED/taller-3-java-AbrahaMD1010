@@ -10,6 +10,10 @@ public class TV {
     private static int numTV;
 
     //Constructor
+    /**
+     * @param marca
+     * @param estado
+     */
     public TV(Marca marca, boolean estado) {
         this.marca=marca;
         this.estado=estado;

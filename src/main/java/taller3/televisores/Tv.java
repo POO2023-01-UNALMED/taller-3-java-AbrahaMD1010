@@ -1,3 +1,5 @@
+package taller3.televisores;
+
 public class TV {
     private Marca marca;
     private int canal=1;
@@ -49,7 +51,7 @@ public class TV {
         return canal;
     }
 
-    public static void setNumTV(TV numTV){
+    public static void setNumTV(int numTV){
         TV.numTV=numTV;
     }
     public static int getNumTV() {
@@ -65,6 +67,37 @@ public class TV {
     }
     public boolean getEstado() {
         return estado;
+    }
+
+    //Metodos cambio de canal y de volumen
+    public void canalUp() {
+        if (estado==true) {
+            if (canal>=1 && canal<120) {
+                canal++;
+            }
+        }     
+    }
+    public void canalDown() {
+        if (estado==true) {
+            if (canal>1 && canal<=120) {
+                canal--;
+            }
+        }
+    }
+
+    public void volumenUp() {
+        if (estado==true) {
+            if (volumen>=0 && volumen<7) {
+                volumen++;
+            }
+        }
+    }
+    public void volumenDown() {
+        if (estado==true) {
+            if (volumen>0 && volumen<=7) {
+                volumen--;
+            }
+        }
     }
 }
 
